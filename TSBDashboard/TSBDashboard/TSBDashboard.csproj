@@ -189,7 +189,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="appsettings.json" />
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\CrystalReportsViewer_02.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
