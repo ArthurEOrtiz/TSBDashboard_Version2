@@ -1,0 +1,128 @@
+﻿<Window x:Class="TSBDashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TSBDashboard"
+				xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="TSB Dashboard" 
+				Height="450" 
+				Width="800"
+				WindowStyle="None"
+				AllowsTransparency="True">
+	<Window.Resources>
+		<BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+	</Window.Resources>
+
+	<Grid Background="#333">
+		<Grid.RowDefinitions>
+		<RowDefinition Height="Auto"/>
+		<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- Custom Title Bar -->
+		<Grid 
+			Height="30" 
+			VerticalAlignment="Top" 
+			MouseLeftButtonDown="Grid_MouseLeftButtonDown"
+			>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<Label 
+				Content="TSB Dashboard"
+				Foreground="White" 
+				VerticalAlignment="Center"
+				/>
+			<StackPanel 
+				Orientation="Horizontal"
+				Grid.Column="1"
+				>
+				<Button 
+					Content="__" 
+					Width="30" 
+					Click="Minimize_Click" 
+					FontWeight="ExtraBold" 
+					/>
+				<Button 
+					Content="X" 
+					Width="30" 
+					Click="Close_Click"
+					FontWeight="ExtraBold" 
+					/>
+			</StackPanel>
+		</Grid>
+		<!-- Rest of your window content -->
+		<Grid Grid.Row="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<!-- Top Bar -->
+			<StackPanel Orientation="Vertical">
+				<!-- Search Box -->
+				<TextBox 
+					x:Name="SearchBox" 
+					Width="200"
+					Height="30"
+					Margin="5" 
+					FontSize="14"
+					TextChanged="SearchBox_TextChanged"
+					VerticalContentAlignment="Center"
+					HorizontalContentAlignment="Center"
+					>
+						<TextBox.Style>
+							<Style TargetType="TextBox">
+								<Style.Triggers>
+								<Trigger Property="Text" Value="">
+									<Setter Property="Background">
+										<Setter.Value>
+											<VisualBrush Stretch="UniformToFill">
+												<VisualBrush.Visual>
+													<Label 
+														Content="Enter search term..." 
+														Background="White" 
+														Foreground="LightGray"
+														FontSize="2"
+														/>
+												</VisualBrush.Visual>
+											</VisualBrush>
+										</Setter.Value>
+									</Setter>
+								</Trigger>
+							</Style.Triggers>
+							</Style>
+						</TextBox.Style>
+				</TextBox>
+			</StackPanel>
+
+			<!-- TreeView -->
+			<TreeView 
+				x:Name="TreeView_Main"
+				ItemsSource="{Binding DirectoryItemViewModel}" 
+				Grid.Row="1"
+				MouseDoubleClick="TreeView_Main_MouseDoubleClick"
+				Background="#333"
+				BorderThickness="2"
+				BorderBrush="White"
+				FontSize="14"
+				>
+					<TreeView.ItemContainerStyle>
+						<Style TargetType="{x:Type TreeViewItem}">
+							<Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}"/>
+							<Setter Property="Visibility" Value="{Binding Visibility}"/>
+						</Style>
+					</TreeView.ItemContainerStyle>
+					<TreeView.ItemTemplate>
+						<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
+							<TextBlock Text="{Binding Name}" Foreground="White"/>
+						</HierarchicalDataTemplate>
+					</TreeView.ItemTemplate>
+				</TreeView>
+		</Grid>
+	</Grid>
+
+</Window>

@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard\\tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard\\tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard\\tsbdashboard\\options\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\options\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 573,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
+              "RelativeDocumentMoniker": "TSBDashboard\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
+              "RelativeToolTip": "TSBDashboard\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T18:37:31.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\appsettings.json",
+              "RelativeDocumentMoniker": "TSBDashboard\\appsettings.json",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\appsettings.json",
+              "RelativeToolTip": "TSBDashboard\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-11T18:33:26.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 573,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SftpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\Options\\SftpSettings.cs",
+              "RelativeDocumentMoniker": "TSBDashboard\\Options\\SftpSettings.cs",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\Options\\SftpSettings.cs",
+              "RelativeToolTip": "TSBDashboard\\Options\\SftpSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T18:33:46.313Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
