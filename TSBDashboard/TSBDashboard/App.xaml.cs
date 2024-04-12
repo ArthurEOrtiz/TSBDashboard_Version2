@@ -147,6 +147,7 @@ namespace TSBDashboard
 				Directory.CreateDirectory(myAppDataPath);
 			}
 		}
+
 		/// <summary>
 		/// Deletes the app data folder, if it exists. 
 		/// </summary>

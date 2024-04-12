@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\",
+  "WorkspaceRootPath": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard\\tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard\\tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard\\tsbdashboard\\options\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\options\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\options\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,25 +35,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SftpService.cs",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Services\\SftpService.cs",
+              "RelativeDocumentMoniker": "TSBDashboard\\Services\\SftpService.cs",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Services\\SftpService.cs",
+              "RelativeToolTip": "TSBDashboard\\Services\\SftpService.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAgwCsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T17:40:46.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
               "RelativeDocumentMoniker": "TSBDashboard\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
               "RelativeToolTip": "TSBDashboard\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T18:37:31.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\appsettings.json",
               "RelativeDocumentMoniker": "TSBDashboard\\appsettings.json",
-              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\appsettings.json",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\appsettings.json",
               "RelativeToolTip": "TSBDashboard\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-11T18:33:26.546Z",
               "EditorCaption": ""
@@ -62,11 +79,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SftpSettings.cs",
-              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\Options\\SftpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Options\\SftpSettings.cs",
               "RelativeDocumentMoniker": "TSBDashboard\\Options\\SftpSettings.cs",
-              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard\\TSBDashboard\\Options\\SftpSettings.cs",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Options\\SftpSettings.cs",
               "RelativeToolTip": "TSBDashboard\\Options\\SftpSettings.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

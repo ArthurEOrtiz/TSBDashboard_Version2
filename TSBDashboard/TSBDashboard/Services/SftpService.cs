@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Options;
-using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -143,7 +142,7 @@ namespace TSBDashboard.Services
 			}
 			catch (Exception ex)
 			{
-				throw new SftpServiceException("DownloadFile Error", ex);	
+				throw new SftpServiceException("DownloadFile Error", ex);
 			}
 		}
 
@@ -204,7 +203,7 @@ namespace TSBDashboard.Services
 			catch (Exception ex)
 			{
 				// Rethrow the exception to be handled by the caller
-				throw new SftpServiceException($"Error loading directory {path}", ex);	
+				throw new SftpServiceException($"Error loading directory {path}", ex);
 			}
 		}
 
