@@ -45,6 +45,7 @@ namespace TSBDashboard.Services
 				{
 					Protocol = Protocol.Sftp,
 					HostName = _host,
+					PortNumber = 22,
 					UserName = $"{_host}|{userName}",
 					Password = ConvertToUnsecureString(password),
 					SshHostKeyFingerprint = _sshHostKeyFingerPrint

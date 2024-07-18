@@ -157,7 +157,6 @@ namespace TSBDashboard.ViewModels
 		}
 
 		// Helper Methods
-
 		/// <summary>
 		/// Creates and displays a LoadingDialogView window. The window is positioned in the center 
 		/// of the main application window. The method returns the created LoadingDialogView instance.

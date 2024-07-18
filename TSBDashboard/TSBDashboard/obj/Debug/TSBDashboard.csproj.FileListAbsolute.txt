@@ -140,3 +140,4 @@ C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboar
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashb.2DBFD311.Up2Date
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard.exe
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard.pdb
+C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\App.baml

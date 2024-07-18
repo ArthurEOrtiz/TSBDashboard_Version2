@@ -26,7 +26,6 @@ namespace TSBDashboard
 		}
 
 		// Configuration
-
 		/// <summary>
 		/// This method is used to set up Dependency Injection (DI) for the application. 
 		/// Dependency Injection is a design pattern that helps to reduce the dependency 
@@ -57,7 +56,6 @@ namespace TSBDashboard
 		}
 
 		// Overrides
-
 		/// <summary>
 		/// This method is called when the application starts up. It is overridden to perform initialization actions before the main window is shown.
 		/// 
@@ -103,7 +101,6 @@ namespace TSBDashboard
 		}
 
 		// Helper Methods
-
 		/// <summary>
 		/// Handles the SuccessfulLogin event from the LogInViewModel. This method is called when a user 
 		/// successfully logs in. It is currently used to transition to the main application window, but 

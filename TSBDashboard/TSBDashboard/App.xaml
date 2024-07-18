@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:TSBDashboard"
              >
     <Application.Resources>
-         
-    </Application.Resources>
+		  <BitmapImage x:Key="AppIcon" UriSource="/Resources/TSBIcon.ico" />
+	</Application.Resources>
 </Application>
