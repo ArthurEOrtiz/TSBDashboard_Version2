@@ -129,6 +129,7 @@ C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboar
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard_Content.g.cs
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard_MarkupCompile.cache
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard_MarkupCompile.lref
+C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\App.baml
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\Views\ErrorDialogView.baml
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\Views\LoadingDialogView.baml
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\Views\MainWindow.baml
@@ -140,4 +141,3 @@ C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboar
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashb.2DBFD311.Up2Date
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard.exe
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\TSBDashboard.pdb
-C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\obj\Debug\App.baml

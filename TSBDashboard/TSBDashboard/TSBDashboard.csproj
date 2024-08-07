@@ -211,7 +211,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="TSBIcon.ico" />
-    <Resource Include="Resources\TSBIcon.ico" />
+    <Content Include="Resources\TSBIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\CrystalReportsViewer_02.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
