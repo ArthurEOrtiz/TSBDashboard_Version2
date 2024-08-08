@@ -46,7 +46,7 @@ namespace TSBDashboard.Services
 					Protocol = Protocol.Sftp,
 					HostName = _host,
 					PortNumber = 22,
-					UserName = $"{_host}|{userName}",
+					UserName = $"ptaxtransfer.idaho.gov|{userName}",
 					Password = ConvertToUnsecureString(password),
 					SshHostKeyFingerprint = _sshHostKeyFingerPrint
 				};
@@ -169,7 +169,7 @@ namespace TSBDashboard.Services
 
 				if (extension == ".rpt")
 				{
-					new CrystalReportsViewerService(destinationPath).ExecuteProgram();
+					new CrystalReportsViewerService(destinationPath).ShowReport();
 				}
 
 				if (extension == ".sql")
