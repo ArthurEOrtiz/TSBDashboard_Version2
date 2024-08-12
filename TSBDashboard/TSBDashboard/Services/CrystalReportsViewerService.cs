@@ -18,7 +18,7 @@ namespace TSBDashboard.Services
 			Application.Current.Dispatcher.Invoke(() =>
 			{
 				var viewerWindow = new CrystalReportViewerWindow(_filePath);
-				viewerWindow.ShowDialog();
+				viewerWindow.Show();
 			});
 		}
 	}
