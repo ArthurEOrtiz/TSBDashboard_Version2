@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\services\\crystalreportsviewerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\services\\crystalreportsviewerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\views\\crystalreportviewerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\views\\crystalreportviewerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\views\\crystalreportviewerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\views\\crystalreportviewerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\views\\crystalreportviewerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\views\\crystalreportviewerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\services\\crystalreportsviewerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\services\\crystalreportsviewerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\views\\crystalreportviewerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\views\\crystalreportviewerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arortiz\\AppData\\Local\\Temp\\.vsdbgsrc\\a1ac3b9fc4538e81376766b9f8ced87613b6e1da5225102341573ce228a19216\\SessionLogReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -57,7 +57,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,20 +65,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.config",
-              "RelativeDocumentMoniker": "TSBDashboard\\App.config",
-              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.config",
-              "RelativeToolTip": "TSBDashboard\\App.config",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAACEAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-08-08T20:03:01.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\packages.config",
               "RelativeDocumentMoniker": "TSBDashboard\\packages.config",
@@ -91,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CrystalReportsViewerService.cs",
               "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Services\\CrystalReportsViewerService.cs",
               "RelativeDocumentMoniker": "TSBDashboard\\Services\\CrystalReportsViewerService.cs",
@@ -104,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.xaml.cs",
               "RelativeDocumentMoniker": "TSBDashboard\\App.xaml.cs",
@@ -117,20 +104,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SftpService.cs",
               "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Services\\SftpService.cs",
               "RelativeDocumentMoniker": "TSBDashboard\\Services\\SftpService.cs",
               "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Services\\SftpService.cs",
               "RelativeToolTip": "TSBDashboard\\Services\\SftpService.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAewKsAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T21:05:42.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\appsettings.json",
+              "RelativeDocumentMoniker": "TSBDashboard\\appsettings.json",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\appsettings.json",
+              "RelativeToolTip": "TSBDashboard\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-01T19:46:45.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrystalReportViewerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
+              "RelativeDocumentMoniker": "TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
+              "RelativeToolTip": "TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T20:35:26.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.config",
+              "RelativeDocumentMoniker": "TSBDashboard\\App.config",
+              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\App.config",
+              "RelativeToolTip": "TSBDashboard\\App.config",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACEAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-08T20:03:01.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CrystalReportViewerWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Views\\CrystalReportViewerWindow.xaml.cs",
               "RelativeDocumentMoniker": "TSBDashboard\\Views\\CrystalReportViewerWindow.xaml.cs",
@@ -139,31 +164,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T21:04:14.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\appsettings.json",
-              "RelativeDocumentMoniker": "TSBDashboard\\appsettings.json",
-              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\appsettings.json",
-              "RelativeToolTip": "TSBDashboard\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-01T19:46:45.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CrystalReportViewerWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
-              "RelativeDocumentMoniker": "TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
-              "ToolTip": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
-              "RelativeToolTip": "TSBDashboard\\Views\\CrystalReportViewerWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-07T20:35:26.337Z",
               "EditorCaption": ""
             },
             {
