@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("appsettings.json")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/tsbicon.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("winscp.exe")]
 
 

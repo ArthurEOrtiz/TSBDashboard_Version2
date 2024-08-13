@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\arortiz\Desktop\Projects\TSBDashboard_Version2\TSBDashboard\TSBDashboard\App.xaml
-4446854279
-2-1413600288
-21-2147317906
-39-1217264484
-Views\ErrorDialogView.xaml;Views\LoadingDialogView.xaml;Views\MainWindow.xaml;Views\LogInView.xaml;
+51338976901
+3439746632
+22-554415768
+47-1938877672
+Views\CrystalReportViewerWindow.xaml;Views\ErrorDialogView.xaml;Views\LoadingDialogView.xaml;Views\MainWindow.xaml;Views\LogInView.xaml;
 
-False
+True
 
