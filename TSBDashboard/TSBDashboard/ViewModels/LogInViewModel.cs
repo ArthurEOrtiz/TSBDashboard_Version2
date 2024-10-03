@@ -59,7 +59,8 @@ namespace TSBDashboard.ViewModels
 		{
 			try
 			{
-				_sftpService.LogIn(UserName, Password);
+				_sftpService.SetUserNamePassWord(UserName, Password);
+				_sftpService.LogIn();
 				SuccessfulLogin?.Invoke();
 			}
 			catch (AuthenticationFailedException ex)

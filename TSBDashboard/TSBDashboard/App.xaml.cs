@@ -115,8 +115,7 @@ namespace TSBDashboard
 			var currentWindow = Current.MainWindow;
 			mainWindow.Owner = Current.MainWindow;
 
-			mainWindow.Left = currentWindow.Left + ((currentWindow.Width - mainWindow.Width) / 2);
-			mainWindow.Top = currentWindow.Top + ((currentWindow.Height - mainWindow.Height) / 2);
+			mainWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
 
 			mainWindow.Show();
 			mainWindow.Owner = null;
