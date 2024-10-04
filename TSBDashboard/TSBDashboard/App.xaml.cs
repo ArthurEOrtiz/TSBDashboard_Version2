@@ -49,7 +49,12 @@ namespace TSBDashboard
 			}
 
 			services.AddSingleton<IConfiguration>(configuration);
+
+			// Bind the SftpSettings
+			var sftpSettings = new SftpSettings();
+			configuration.GetSection("SftpSettings").Bind(sftpSettings);
 			services.Configure<SftpSettings>(configuration.GetSection("SftpSettings"));
+
 			services.AddSingleton<SftpService>(); // Singleton so that we don't make multiple connections to the SFTP server.
 			services.AddTransient<LogInViewModel>();
 			services.AddTransient<MainWindowViewModel>();

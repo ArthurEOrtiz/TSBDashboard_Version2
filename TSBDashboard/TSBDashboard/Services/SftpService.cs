@@ -14,16 +14,14 @@ namespace TSBDashboard.Services
 {
 	public class SftpService
 	{
-		private readonly string _host;
-		private readonly string _sshHostKeyFingerPrint;
+		private readonly SftpSettings _sftpSettings;
 		private Session _session = null;
 		private string UserName;
 		private SecureString Password;
 
 		public SftpService(IOptions<SftpSettings> sftpSettings)
 		{
-			_host = sftpSettings.Value.Host;
-			_sshHostKeyFingerPrint = sftpSettings.Value.SshHostKeyFingerPrint;
+			_sftpSettings = sftpSettings.Value;
 			App.ApplicationExiting += CloseSession;
 		}
 
@@ -46,30 +44,38 @@ namespace TSBDashboard.Services
 		/// <exception cref="SftpServiceException">Thrown when an error occurs while trying to establish a connection to the SFTP server.</exception>
 		public void LogIn()
 		{
-			try
+			foreach (var host in _sftpSettings.Hosts)
 			{
-				var sessionOptions = new SessionOptions()
+				try
 				{
-					Protocol = Protocol.Sftp,
-					HostName = _host,
-					PortNumber = 22,
-					UserName = $"ptaxtransfer.idaho.gov|{UserName}",
-					SecurePassword = Password,
-					SshHostKeyFingerprint = _sshHostKeyFingerPrint
-				};
+					var sessionOptions = new SessionOptions()
+					{
+						Protocol = Protocol.Sftp,
+						HostName = host,
+						PortNumber = 22,
+						UserName = $"ptaxtransfer.idaho.gov|{UserName}",
+						SecurePassword = Password,
+						SshHostKeyFingerprint = _sftpSettings.SshHostKeyFingerPrint
+					};
 
-				_session = new Session();
-				_session.Open(sessionOptions);
-			}
-			catch (SessionRemoteException ex)
-			{
-				if (ex.Message.Contains("Authentication failed"))
-				{
-					throw new AuthenticationFailedException("Invalid username or password.", ex);
+					_session = new Session();
+					_session.Open(sessionOptions);
+					break;
 				}
-				else
+				catch (SessionRemoteException ex)
 				{
-					throw new SftpServiceException("An error occurred while trying to log in.", ex);
+					if (ex.Message.Contains("Authentication failed"))
+					{
+						throw new AuthenticationFailedException("Invalid username or password.", ex);
+					}
+					else
+					{
+						continue;
+					}
+				}
+				catch (Exception ex)
+				{
+					throw new SftpServiceException("Error connecting to SFTP server.", ex);
 				}
 			}
 		}
