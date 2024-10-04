@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\services\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|C:\\Users\\arortiz\\Desktop\\Projects\\TSBDashboard_Version2\\TSBDashboard\\tsbdashboard\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|c:\\users\\arortiz\\desktop\\projects\\tsbdashboard_version2\\tsbdashboard\\tsbdashboard\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B60A1EDC-F3EE-4207-9887-D8C0B1F79A73}|TSBDashboard\\TSBDashboard.csproj|solutionrelative:tsbdashboard\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,7 +62,8 @@
               "RelativeToolTip": "TSBDashboard\\Views\\LogInView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T15:27:00.98Z"
+              "WhenOpened": "2024-08-13T15:27:00.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,7 +87,8 @@
               "RelativeToolTip": "TSBDashboard\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-13T15:42:21.193Z"
+              "WhenOpened": "2024-08-13T15:42:21.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,7 +100,8 @@
               "RelativeToolTip": "TSBDashboard\\ViewModels\\MainWindowViewModel.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAqwHgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T14:45:49.094Z"
+              "WhenOpened": "2024-07-22T14:45:49.094Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -123,7 +126,8 @@
               "RelativeToolTip": "TSBDashboard\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-08-16T21:06:51.786Z"
+              "WhenOpened": "2024-08-16T21:06:51.786Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,7 +139,8 @@
               "RelativeToolTip": "TSBDashboard\\ViewModels\\LogInViewModel.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T15:30:46.054Z"
+              "WhenOpened": "2024-08-13T15:30:46.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

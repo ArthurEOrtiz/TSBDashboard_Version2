@@ -32,7 +32,7 @@
 				<ColumnDefinition Width="Auto" />
 			</Grid.ColumnDefinitions>
 			<Label 
-				Content="TSB Dashboard"
+				Content="TSB Dashboard - Version 6.1.4"
 				Foreground="White" 
 				VerticalAlignment="Center"
 				/>

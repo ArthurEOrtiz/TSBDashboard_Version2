@@ -80,10 +80,10 @@ namespace TSBDashboard.ViewModels
 			try
 			{
 				await _sftpService.DownloadFileAsync(item.Name, item.Path);
+				_sftpService.OpenFile(item.Name);
 			}
 			catch (Exception ex)
 			{
-				loadingDialog.Close();
 				ShowErrorDialog(ex.Message);
 			}
 			finally
@@ -115,17 +115,17 @@ namespace TSBDashboard.ViewModels
 		/// DirectoryItemViewModel collection. This starts the recursive search for each item and its subitems.</para>
 		/// </summary>
 		/// <param name="queryObject">The search query as an object. It is cast to a string before being used.</param>
-		public void FilterDirectoryItems(object queryObject)
+		public void FilterDirectoryItems(string query)
 		{
 			// Little null check. 
-			if (queryObject == null) return;
-			string query = queryObject.ToString();
-			
+			if (query == "") return;
+
 			if (DirectoryItemViewModel == null) return; // This is here so if the page is still loading and 
 			// the user tries to search, it wont throw and error. 
 
 			// Define a recursive function to search the items
 			Func<DirectoryItemViewModel, bool> searchItems = null;
+
 			searchItems = currentItem =>
 			{
 				bool isMatch = currentItem.Name.ToLower().Contains(query.ToLower());
@@ -167,10 +167,9 @@ namespace TSBDashboard.ViewModels
 			var loadingDialog = new LoadingDialogView();
 
 			var currentWindow = Application.Current.MainWindow;
-			loadingDialog.Owner = Application.Current.MainWindow;
+			loadingDialog.Owner = currentWindow;
 
-			loadingDialog.Left = currentWindow.Left + ((currentWindow.Width - loadingDialog.Width) / 2);
-			loadingDialog.Top = currentWindow.Top + ((currentWindow.Height - loadingDialog.Height) / 2);
+			loadingDialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
 
 			loadingDialog.Show();
 			loadingDialog.Owner = null;
@@ -189,10 +188,9 @@ namespace TSBDashboard.ViewModels
 			errorDialog.ErrorMessage.Text = errorMessage;
 
 			var currentWindow = Application.Current.MainWindow;
-			errorDialog.Owner = Application.Current.MainWindow;
+			errorDialog.Owner = currentWindow;
 
-			errorDialog.Left = currentWindow.Left + ((currentWindow.Width - errorDialog.Width) / 2);
-			errorDialog.Top = currentWindow.Top + ((errorDialog.Height - errorDialog.Height) / 2);
+			errorDialog.WindowStartupLocation= WindowStartupLocation.CenterOwner;
 
 			errorDialog.ShowDialog();
 			errorDialog.Owner = null;

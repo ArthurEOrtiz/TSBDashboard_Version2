@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Security;
 using System.Threading.Tasks;
 using TSBDashboard.Exceptions;
@@ -18,12 +17,20 @@ namespace TSBDashboard.Services
 		private readonly string _host;
 		private readonly string _sshHostKeyFingerPrint;
 		private Session _session = null;
+		private string UserName;
+		private SecureString Password;
 
 		public SftpService(IOptions<SftpSettings> sftpSettings)
 		{
 			_host = sftpSettings.Value.Host;
 			_sshHostKeyFingerPrint = sftpSettings.Value.SshHostKeyFingerPrint;
 			App.ApplicationExiting += CloseSession;
+		}
+
+		public void SetUserNamePassWord(string userName, SecureString password)
+		{
+			UserName = userName;
+			Password = password;
 		}
 
 		/// <summary>
@@ -37,7 +44,7 @@ namespace TSBDashboard.Services
 		/// <param name="password">The password to use for authentication with the SFTP server. This is a SecureString for added security.</param>
 		/// <exception cref="AuthenticationFailedException">Thrown when the provided username or password is incorrect.</exception>
 		/// <exception cref="SftpServiceException">Thrown when an error occurs while trying to establish a connection to the SFTP server.</exception>
-		public void LogIn(string userName, SecureString password)
+		public void LogIn()
 		{
 			try
 			{
@@ -46,8 +53,8 @@ namespace TSBDashboard.Services
 					Protocol = Protocol.Sftp,
 					HostName = _host,
 					PortNumber = 22,
-					UserName = $"ptaxtransfer.idaho.gov|{userName}",
-					Password = ConvertToUnsecureString(password),
+					UserName = $"ptaxtransfer.idaho.gov|{UserName}",
+					SecurePassword = Password,
 					SshHostKeyFingerprint = _sshHostKeyFingerPrint
 				};
 
@@ -129,21 +136,33 @@ namespace TSBDashboard.Services
 		/// <returns>A Task representing the ongoing download operation.</returns>
 		/// <exception cref="SftpServiceException">Thrown when the there has been an error downloading the file.
 		/// This will be handle by the UI and should update the user about it.</exception>
-		public async Task DownloadFileAsync(string fileName, string path)
+		public async Task DownloadFileAsync(string fileName, string path, int retryCount = 1)
 		{
-			string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-			string myAppDataPath = Path.Combine(appDataPath, "TSBDashboard");
-			string destinationPath = Path.Combine(myAppDataPath, fileName);
+			string destinationPath = GetDestinationPath(fileName);
+
+			if (!IsSessionOpen())
+			{
+				LogIn();
+			}
+
 			try
 			{
 				await Task.Run(() => _session.GetFiles(path, destinationPath, false));
-
-				// Open the file after it has been downloaded
-				_ = Task.Run(() => OpenFile(destinationPath));
+			}
+			catch (SessionRemoteException ex)
+			{
+				if (retryCount > 0)
+				{
+					await DownloadFileAsync(fileName, path, retryCount - 1);
+				}
+				else
+				{
+					throw new SftpServiceException($"Connection Error, try restarting the program.", ex);
+				}
 			}
 			catch (Exception ex)
 			{
-				throw new SftpServiceException("DownloadFile Error", ex);
+				throw new SftpServiceException("DownloadFile Error, contact support.", ex);
 			}
 		}
 
@@ -157,9 +176,11 @@ namespace TSBDashboard.Services
 		/// If the file has any other extension, it is opened with the default program associated with that extension.
 		/// </remarks>
 		/// <exception cref="SftpServiceException">Thrown when an error occurs while trying to open the file.</exception>
-		private void OpenFile(string destinationPath)
+		public void OpenFile(string fileName)
 		{
+			string destinationPath = GetDestinationPath(fileName);
 			var extension = Path.GetExtension(destinationPath);
+
 			try
 			{
 				if (extension != ".rpt" && extension != ".sql")
@@ -213,34 +234,35 @@ namespace TSBDashboard.Services
 		/// </summary>
 		public void CloseSession()
 		{
-			if (_session != null && _session.Opened)
+			if (IsSessionOpen())
 			{
 				_session.Close();
 			}
 		}
 
-		/// <summary>
-		/// Converts a <see cref="SecureString"/> to an unsecure string.
-		/// </summary>
-		/// <param name="securePassword">The <see cref="SecureString"/> to convert.</param>
-		/// <returns>The unsecure string representation of the <see cref="SecureString"/>.</returns>
-		private string ConvertToUnsecureString(SecureString securePassword)
+		private bool IsSessionOpen()
 		{
-			if (securePassword == null)
+			if (_session == null && !_session.Opened)
 			{
-				return string.Empty;
+				return false;
 			}
 
-			IntPtr unmanagedString = IntPtr.Zero;
 			try
 			{
-				unmanagedString = Marshal.SecureStringToGlobalAllocUnicode(securePassword);
-				return Marshal.PtrToStringUni(unmanagedString);
+				_session.ExecuteCommand("echo 'ping'");
+				return true;
 			}
-			finally
+			catch
 			{
-				Marshal.ZeroFreeGlobalAllocUnicode(unmanagedString);
+				return false;
 			}
+		}
+
+		private string GetDestinationPath(string fileName)
+		{
+			string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+			string myAppDataPath = Path.Combine(appDataPath, "TSBDashboard");
+			return Path.Combine(myAppDataPath, fileName);
 		}
 	}
 }
