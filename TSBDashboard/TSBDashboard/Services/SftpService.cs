@@ -25,6 +25,11 @@ namespace TSBDashboard.Services
 			App.ApplicationExiting += CloseSession;
 		}
 
+		~SftpService()
+		{
+			Dispose(false);
+		}
+
 		public void SetUserNamePassWord(string userName, SecureString password)
 		{
 			UserName = userName;
@@ -240,29 +245,33 @@ namespace TSBDashboard.Services
 		/// </summary>
 		public void CloseSession()
 		{
-			if (IsSessionOpen())
+			if (_session != null)
 			{
 				_session.Close();
+				_session = null;
+			}
+		}
+
+		public void Dispose()
+		{
+			Dispose(true);
+			GC.SuppressFinalize(this);
+		}	
+
+		protected virtual void Dispose(bool disposing)
+		{
+			if (disposing)
+			{
+				App.ApplicationExiting -= CloseSession;
+				CloseSession();
 			}
 		}
 
 		private bool IsSessionOpen()
 		{
-			if (_session == null && !_session.Opened)
-			{
-				return false;
-			}
-
-			try
-			{
-				_session.ExecuteCommand("echo 'ping'");
-				return true;
-			}
-			catch
-			{
-				return false;
-			}
+			return _session != null && _session.Opened;
 		}
+
 
 		private string GetDestinationPath(string fileName)
 		{

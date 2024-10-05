@@ -29,6 +29,7 @@ namespace TSBDashboard.ViewModels
 			get => _password;
 			set
 			{
+				_password?.Dispose();
 				_password = value;
 				OnPropertyChanged(nameof(Password));
 				((RelayCommand)LogInCommand).RaiseCanExecuteChanged();
@@ -73,12 +74,21 @@ namespace TSBDashboard.ViewModels
 			}
 		}
 
-
-
 		private bool CanLogIn(object parameter)
 		{
 			return !string.IsNullOrEmpty(UserName) && Password != null && Password.Length > 0;
 		}
 
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing)
+			{
+				_password?.Dispose();
+				_sftpService?.Dispose();
+				SuccessfulLogin = null;
+			}
+
+			base.Dispose(disposing);
+		}
 	}
 }

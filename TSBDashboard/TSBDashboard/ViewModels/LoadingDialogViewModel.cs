@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Timers;
 
 namespace TSBDashboard.ViewModels
 {
 	public class LoadingDialogViewModel : ViewModelBase
 	{
-		private readonly System.Timers.Timer _loadingTextTimer;
+		private readonly Timer _loadingTextTimer;
 
 		private string _loadingText;
 		public string LoadingText
@@ -24,12 +20,12 @@ namespace TSBDashboard.ViewModels
 		public LoadingDialogViewModel()
 		{
 			LoadingText = "Loading";
-			_loadingTextTimer = new System.Timers.Timer(500);
+			_loadingTextTimer = new Timer(500);
 			_loadingTextTimer.Elapsed += OnLoadingTextTimerElapsed;
 			_loadingTextTimer.Start();
 		}
 
-		private void OnLoadingTextTimerElapsed(object sender, System.Timers.ElapsedEventArgs e)
+		private void OnLoadingTextTimerElapsed(object sender, ElapsedEventArgs e)
 		{
 			switch (LoadingText)
 			{
@@ -49,10 +45,15 @@ namespace TSBDashboard.ViewModels
 			}
 		}
 
-		public void Dispose()
+		protected override void Dispose(bool disposing)
 		{
-			_loadingTextTimer.Stop();
-			_loadingTextTimer.Dispose();
+			if (disposing)
+			{
+				_loadingTextTimer.Stop();
+				_loadingTextTimer.Dispose();
+			}
+
+			base.Dispose(disposing);
 		}
 	}
 }

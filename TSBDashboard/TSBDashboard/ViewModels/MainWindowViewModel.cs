@@ -50,22 +50,31 @@ namespace TSBDashboard.ViewModels
 		/// </summary>
 		private async Task LoadDataAsync()
 		{
-			var loadingDialog = ShowLoadingDialog();
+			LoadingDialogView loadingDialog = null;
 
 			try
 			{
-				DirectoryItemViewModel = await _sftpService.GetAllDirectoriesAndFiles("/");
+				// Show the loading dialog
+				loadingDialog = ShowLoadingDialog();
+
+				// Load data asynchronously
+				_directoryItemViewModel = await _sftpService.GetAllDirectoriesAndFiles("/");
+
+				// Update the DirectoryItemViewModel property
+				DirectoryItemViewModel = _directoryItemViewModel;
 			}
 			catch (Exception ex)
 			{
-				loadingDialog.Close();
+				// Show error dialog if an exception occurs
 				ShowErrorDialog(ex.Message);
 			}
 			finally
 			{
-				loadingDialog.Close();
+				// Close the loading dialog
+				loadingDialog?.Close();
 			}
 		}
+
 
 		/// <summary>
 		/// Asynchronously downloads a file specified by the DirectoryItemViewModel parameter. 
@@ -117,8 +126,19 @@ namespace TSBDashboard.ViewModels
 		/// <param name="queryObject">The search query as an object. It is cast to a string before being used.</param>
 		public void FilterDirectoryItems(string query)
 		{
-			// Little null check. 
-			if (query == "") return;
+			// Check if the query is an empty string
+			if (string.IsNullOrEmpty(query))
+			{
+				// Collapse all items
+				if (DirectoryItemViewModel != null)
+				{
+					foreach (var item in DirectoryItemViewModel)
+					{
+						CollapseItem(item);
+					}
+				}
+				return;
+			}
 
 			if (DirectoryItemViewModel == null) return; // This is here so if the page is still loading and 
 			// the user tries to search, it wont throw and error. 
@@ -144,7 +164,11 @@ namespace TSBDashboard.ViewModels
 
 				// Update the visibility and expansion of the current item
 				currentItem.Visibility = isMatch ? Visibility.Visible : Visibility.Collapsed;
-				currentItem.IsExpanded = isMatch;
+				// Update the expansion of the current item if it's a directory
+				if (currentItem.IsDirectory)
+				{
+					currentItem.IsExpanded = isMatch;
+				}
 
 				return isMatch;
 			};
@@ -164,18 +188,24 @@ namespace TSBDashboard.ViewModels
 		/// <returns>The created <see cref="LoadingDialogView"/> instance.</returns>
 		private LoadingDialogView ShowLoadingDialog()
 		{
-			var loadingDialog = new LoadingDialogView();
+			LoadingDialogView loadingDialog = null;
 
-			var currentWindow = Application.Current.MainWindow;
-			loadingDialog.Owner = currentWindow;
+			Application.Current.Dispatcher.Invoke(() =>
+			{
+				loadingDialog = new LoadingDialogView();
 
-			loadingDialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+				var currentWindow = Application.Current.MainWindow;
+				loadingDialog.Owner = currentWindow;
 
-			loadingDialog.Show();
-			loadingDialog.Owner = null;
+				loadingDialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+
+				loadingDialog.Show();
+				loadingDialog.Owner = null;
+			});
 
 			return loadingDialog;
 		}
+
 
 		/// <summary>
 		/// Creates and displays an ErrorDialogView window with a specified error message. 
@@ -194,6 +224,41 @@ namespace TSBDashboard.ViewModels
 
 			errorDialog.ShowDialog();
 			errorDialog.Owner = null;
+		}
+
+		private void CollapseItem(DirectoryItemViewModel item)
+		{
+			if (!item.IsDirectory)
+			{
+				item.Visibility = Visibility.Visible;
+			}
+
+			if (item.IsDirectory)
+			{
+				item.IsExpanded = false;
+				foreach (var subItem in item.SubItems)
+				{
+					CollapseItem(subItem);
+				}
+			}
+		}
+
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing)
+			{
+				_sftpService?.Dispose();
+
+				if(_directoryItemViewModel != null)
+				{
+					foreach (var item in _directoryItemViewModel)
+					{
+						item.Dispose();
+					}
+				}
+
+				base.Dispose(disposing);
+			}
 		}
 	}
 }
