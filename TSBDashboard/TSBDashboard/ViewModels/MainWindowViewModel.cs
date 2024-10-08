@@ -75,7 +75,6 @@ namespace TSBDashboard.ViewModels
 			}
 		}
 
-
 		/// <summary>
 		/// Asynchronously downloads a file specified by the DirectoryItemViewModel parameter. 
 		/// This method first shows a loading dialog, then initiates the file download, 
@@ -129,19 +128,16 @@ namespace TSBDashboard.ViewModels
 			// Check if the query is an empty string
 			if (string.IsNullOrEmpty(query))
 			{
-				// Collapse all items
-				if (DirectoryItemViewModel != null)
+				foreach (var item in DirectoryItemViewModel)
 				{
-					foreach (var item in DirectoryItemViewModel)
-					{
-						CollapseItem(item);
-					}
+					CollapseItem(item);
 				}
+
 				return;
 			}
 
 			if (DirectoryItemViewModel == null) return; // This is here so if the page is still loading and 
-			// the user tries to search, it wont throw and error. 
+																									// the user tries to search, it wont throw and error. 
 
 			// Define a recursive function to search the items
 			Func<DirectoryItemViewModel, bool> searchItems = null;
@@ -220,7 +216,7 @@ namespace TSBDashboard.ViewModels
 			var currentWindow = Application.Current.MainWindow;
 			errorDialog.Owner = currentWindow;
 
-			errorDialog.WindowStartupLocation= WindowStartupLocation.CenterOwner;
+			errorDialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
 
 			errorDialog.ShowDialog();
 			errorDialog.Owner = null;
@@ -228,11 +224,7 @@ namespace TSBDashboard.ViewModels
 
 		private void CollapseItem(DirectoryItemViewModel item)
 		{
-			if (!item.IsDirectory)
-			{
-				item.Visibility = Visibility.Visible;
-			}
-
+			item.Visibility = Visibility.Visible;
 			if (item.IsDirectory)
 			{
 				item.IsExpanded = false;
@@ -249,7 +241,7 @@ namespace TSBDashboard.ViewModels
 			{
 				_sftpService?.Dispose();
 
-				if(_directoryItemViewModel != null)
+				if (_directoryItemViewModel != null)
 				{
 					foreach (var item in _directoryItemViewModel)
 					{

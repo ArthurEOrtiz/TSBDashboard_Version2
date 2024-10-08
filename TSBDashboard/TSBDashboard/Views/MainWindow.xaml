@@ -32,7 +32,7 @@
 				<ColumnDefinition Width="Auto" />
 			</Grid.ColumnDefinitions>
 			<Label 
-				Content="TSB Dashboard - Version 6.1.4"
+				Content="TSB Dashboard - Version 6.1.6"
 				Foreground="White" 
 				VerticalAlignment="Center"
 				/>
@@ -73,6 +73,7 @@
 					TextChanged="SearchBox_TextChanged"
 					VerticalContentAlignment="Center"
 					HorizontalContentAlignment="Center"
+					TextAlignment="Left"
 					>
 						<TextBox.Style>
 							<Style TargetType="TextBox">

@@ -127,32 +127,13 @@ namespace TSBDashboard.Services
 			}
 		}
 
-		/// <summary>
-		/// <para>
-		/// Asynchronously downloads a file from an SFTP server.
-		/// </para>
-		/// <para>
-		/// This method is responsible for connecting to the server, navigating to the correct directory,
-		/// and downloading the specified file. It may also handle errors and exceptions that occur during 
-		/// the process. Additionally It will open the file upon download via the <seealso cref="OpenFile(string)"/>
-		/// </para>
-		/// <para>
-		/// The method is asynchronous, meaning it returns a Task that represents the ongoing download 
-		/// operation. This allows the method to be awaited, so it can be run in the background without
-		/// blocking the main application thread.
-		/// </para>
-		/// </summary>
-		/// <param name="remoteFilePath">The path to the file on the SFTP server.</param>
-		/// <param name="localFilePath">The path where the file should be saved on the local machine.</param>
-		/// <returns>A Task representing the ongoing download operation.</returns>
-		/// <exception cref="SftpServiceException">Thrown when the there has been an error downloading the file.
-		/// This will be handle by the UI and should update the user about it.</exception>
 		public async Task DownloadFileAsync(string fileName, string path, int retryCount = 1)
 		{
 			string destinationPath = GetDestinationPath(fileName);
 
-			if (!IsSessionOpen())
+			if (!IsSessionOpen() || retryCount == 0)
 			{
+				CloseSession();
 				LogIn();
 			}
 
@@ -160,7 +141,7 @@ namespace TSBDashboard.Services
 			{
 				await Task.Run(() => _session.GetFiles(path, destinationPath, false));
 			}
-			catch (SessionRemoteException ex)
+			catch (Exception ex)
 			{
 				if (retryCount > 0)
 				{
@@ -168,12 +149,8 @@ namespace TSBDashboard.Services
 				}
 				else
 				{
-					throw new SftpServiceException($"Connection Error, try restarting the program.", ex);
+					throw new SftpServiceException("Failed to download file, please contact support.", ex);
 				}
-			}
-			catch (Exception ex)
-			{
-				throw new SftpServiceException("DownloadFile Error, contact support.", ex);
 			}
 		}
 

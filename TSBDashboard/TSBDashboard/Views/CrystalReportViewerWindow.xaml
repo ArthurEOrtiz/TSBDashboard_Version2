@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSBDashboard.Views"
         mc:Ignorable="d"
-        Title="Crystal Report Viewer" Height="450" Width="800">
+        Title="Crystal Report Viewer" Height="600" Width="1000">
     <Grid>
 		  <WindowsFormsHost Name="windowsFormsHost" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 	</Grid>
